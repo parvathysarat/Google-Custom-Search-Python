@@ -29,6 +29,6 @@ for i in range(0,10):
     for result in soup["items"]:
         print(result.get('link'))
         links.append(result.get('link').encode('utf-8'))
-        // get whatever else you want
+        // get whatever other content you want
     URL = "https://www.googleapis.com/customsearch/v1?key="+API_KEY+"&cx="+CSE_ID+"&q="+query+"&start="+str(startInd)
     soup = requests.get(URL).json()
